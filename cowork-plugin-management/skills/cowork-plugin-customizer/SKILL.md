@@ -97,8 +97,6 @@ For each tool identified during customization:
 
 Collect all MCP results and present them together in the summary output (see below) — don't present MCPs one at a time during this phase.
 
-**Note:** First-party integrations (Gmail, Google Calendar, Google Drive) are connected at the user level and don't need plugin `.mcp.json` entries.
-
 ## Packaging the Plugin
 
 After all customizations are applied, package the plugin as a `.plugin` file for the user:
