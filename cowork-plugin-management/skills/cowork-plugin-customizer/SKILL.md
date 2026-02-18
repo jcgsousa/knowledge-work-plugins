@@ -17,7 +17,7 @@ Customize a plugin for a specific organization — either by setting up a generi
 
 After locating the plugin, check for `~~`-prefixed placeholders: `grep -rn '~~\w' /path/to/plugin --include='*.md' --include='*.json'`
 
-> **Default rule**: If `~~` placeholders exist, always use **Generic plugin setup** mode — even if the user asked about a specific part of the plugin. Placeholders indicate the plugin hasn't been fully set up yet, and skipping them risks leaving the plugin in a broken state. After all placeholders are resolved, address any additional scoped request the user made.
+> **Default rule**: If `~~` placeholders exist, default to **Generic plugin setup** unless the user explicitly asks to customize a specific part of the plugin.
 
 **1. Generic plugin setup** — The plugin contains `~~`-prefixed placeholders. These are customization points in a template that need to be replaced with real values (e.g., `~~Jira` → `Asana`, `~~your-team-channel` → `#engineering`).
 
